@@ -1,0 +1,88 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/default.css">
+  <link rel="stylesheet" type="text/css" href="/personal.css">
+  <link rel="stylesheet" type="text/css" href="/school.css">
+  <link rel="stylesheet" type="text/css" href="/work.css">
+</head>
+<body>
+  <div id="top-content" onclick="closeScreen(this.id)" class="content">
+    <h1>{{#i18n}}work-header{{/i18n}}</h1>
+  </div>
+
+  <div id="bottom-left-content" onclick="closeScreen(this.id)" class="content">
+    <h1>{{#i18n}}school-header{{/i18n}}</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam, doloribus, iure blanditiis illum natus sed, autem dolorum amet voluptatem itaque voluptate corporis vero? Sint laborum consequuntur aspernatur, quod laboriosam in totam exercitationem corporis nulla doloribus vitae aliquam consequatur, tempore officia, ab voluptatem incidunt! Incidunt suscipit odio corrupti ipsa earum nulla vel rerum veritatis, magni sapiente laudantium veniam deleniti minima.</p>
+  </div>
+
+  <div id="bottom-right-content" onclick="closeScreen(this.id)" class="content">
+    <h1>{{#i18n}}personal-header{{/i18n}}</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam, doloribus, iure blanditiis illum natus sed, autem dolorum amet voluptatem itaque voluptate corporis vero? Sint laborum consequuntur aspernatur, quod laboriosam in totam exercitationem corporis nulla doloribus vitae aliquam consequatur, tempore officia, ab voluptatem incidunt! Incidunt suscipit odio corrupti ipsa earum nulla vel rerum veritatis, magni sapiente laudantium veniam deleniti minima.</p>
+  </div>
+  <div id="middle-content" onclick="closeScreen(this.id)" class="content">
+  </div>
+  <div id="triforce">
+    <svg>
+      <g id="top" onclick="openScreen(this.id)">
+        <polygon  points="0 75, 50 0, 100 75" style="fill:yellow;stroke:black"/>
+        <text text-anchor="middle" dominant-baseline="middle" x="50" y="55">{{#i18n}}work-thumbnail{{/i18n}}</text>
+      </g>
+      <g id="bottom-left"  onclick="openScreen(this.id)">
+        <polygon points="0 75, 50 0, 100 75" style="fill:yellow;stroke:black"/>
+        <text text-anchor="middle" dominant-baseline="middle" x="50" y="55">{{#i18n}}school-thumbnail{{/i18n}}</text>
+      </g>
+      <g id="bottom-right" onclick="openScreen(this.id)">
+        <polygon points="0 75, 50 0, 100 75" style="fill:yellow;stroke:black"/>
+        <text text-anchor="middle" dominant-baseline="middle" x="50" y="55">{{#i18n}}personal-thumbnail{{/i18n}}</text>
+      </g>
+      <g id="middle" onclick="openScreen(this.id)">
+        <polygon points="0 0, 50 75, 100 0"  style="fill:black;stroke:black"/>
+      </g>
+      <use id="overlay"/>
+    </svg>
+  </div>
+  <script src="https://unpkg.com/@mojs/core"></script>
+</body>
+<script defer>
+  function updateSVG() {
+    const element = document.querySelector("#triforce svg");
+    element.innerHTML += "";
+  }
+
+  function closeScreen(screenId) {
+    let element = document.getElementById(screenId.substring(0, screenId.lastIndexOf('-')))
+    document.getElementById(screenId).classList.remove('show');
+    setTimeout(() => {
+      element.classList.remove("fullscreen");
+      setTimeout(() => {
+        overlay.removeAttribute("xlink:href")
+        updateSVG();
+      }, 1000)
+    }, 1000)
+  }
+
+  function openScreen(partName) {
+    let element = document.getElementById(partName);
+    const overlay = document.getElementById("overlay");
+    if (!element.classList.contains("fullscreen")) {
+      overlay.setAttribute("xlink:href", `#${partName}`)
+      updateSVG();
+
+      setTimeout(() => {
+        element = document.getElementById(partName);
+        element.classList.add("fullscreen");
+      }, 1)
+
+      setTimeout(() => {
+        document.getElementById(`${partName}-content`).classList.add('show');
+      }, 1000)
+    }
+  }
+
+  window.onresize = () => {
+    const reference = {x: 1920, y: 1080}
+    var scaleY = window.outerHeight / reference.y;
+    document.getElementById("triforce").style.transform = `scale(${scaleY * 5})`;
+  }
+
+  window.onresize();
+</script>
