@@ -20,6 +20,13 @@ app.use('/:lang(fr|en)', (req, res, next) => {
     next();
 })
 
+app.use('//', (req, res) => {
+    res.writeHead(302 , {
+        'Location' : '/fr'
+    });
+    res.end();
+})
+
 app.use('/:lang(fr|en)', require('./routes/mainRoutes'));
 
 app.use(express.static(path.join(__dirname, "public")));
