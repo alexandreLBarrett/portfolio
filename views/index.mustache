@@ -1,29 +1,82 @@
 <head>
-  <link rel="stylesheet" type="text/css" href="/default.css">
-  <link rel="stylesheet" type="text/css" href="/personal.css">
-  <link rel="stylesheet" type="text/css" href="/school.css">
-  <link rel="stylesheet" type="text/css" href="/work.css">
+  <link rel="stylesheet" type="text/css" href="css/default.css">
+  <link rel="stylesheet" type="text/css" href="css/personal.css">
+  <link rel="stylesheet" type="text/css" href="css/school.css">
+  <link rel="stylesheet" type="text/css" href="css/work.css">
 </head>
 <body>
   <div id="top-content" onclick="closeScreen(this.id)" class="content">
     <h1>{{#i18n}}work-header{{/i18n}}</h1>
     <div id="work-main">
-      <div class="web-bubble"></div>
-      <div class="game-bubble"></div>
+      <div class="web-bubble">
+        <div id="polygon" class="banner">
+          <img class="company-image" src="res/polygon.jpg"></img>
+          <div>
+            <h3 class="company-name">{{#i18n}}polygon-name{{/i18n}} <small>{{#i18n}}polygon-date{{/i18n}}</small></h3>
+            <p class="company-desc">{{#i18n}}polygon-description{{/i18n}}</p>
+          </div>
+        </div>
+        <div id="tolle" class="banner">
+          <img class="company-image" src="res/tollé.png"></img>
+          <div>
+            <h3 class="company-name">{{#i18n}}tollé-name{{/i18n}} <small>{{#i18n}}tollé-date{{/i18n}}</small></h3>
+            <p class="company-desc">{{#i18n}}tollé-description{{/i18n}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="game-bubble">
+        <div id="dna-nova" class="banner">
+          <img src="res/Ubisoft.png"></img>
+          <div>
+            <h3 class="company-name">{{#i18n}}nova-name{{/i18n}} <small>{{#i18n}}nova-date{{/i18n}}</small></h3>
+            <p class="company-desc">{{#i18n}}nova-description{{/i18n}}</p>
+          </div>
+        </div>
+        <div id="talisker" class="banner">
+          <img src="res/Ubisoft.png"></img>
+          <div>
+            <h3 class="company-name">{{#i18n}}talisker-name{{/i18n}} <small>{{#i18n}}talisker-date{{/i18n}}</small></h3>
+            <p class="company-desc">{{#i18n}}talisker-description{{/i18n}}</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
   <div id="bottom-left-content" onclick="closeScreen(this.id)" class="content">
     <h1>{{#i18n}}school-header{{/i18n}}</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam, doloribus, iure blanditiis illum natus sed, autem dolorum amet voluptatem itaque voluptate corporis vero? Sint laborum consequuntur aspernatur, quod laboriosam in totam exercitationem corporis nulla doloribus vitae aliquam consequatur, tempore officia, ab voluptatem incidunt! Incidunt suscipit odio corrupti ipsa earum nulla vel rerum veritatis, magni sapiente laudantium veniam deleniti minima.</p>
+    <div id="school-main">
+      <div id="timeline">
+        <div class="separator" style="left: 0"></div>
+        <div class="separator" style="left: 25%"></div>
+        <div class="separator" style="left: 50%"></div>
+        <div class="separator" style="left: 75%"></div>
+        <div class="arrow"></div>
+        <div id="cegep" class="section"></div>
+        <div id="uni" class="section"></div>
+      </div>
+    </div>
   </div>
 
   <div id="bottom-right-content" onclick="closeScreen(this.id)" class="content">
     <h1>{{#i18n}}personal-header{{/i18n}}</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam, doloribus, iure blanditiis illum natus sed, autem dolorum amet voluptatem itaque voluptate corporis vero? Sint laborum consequuntur aspernatur, quod laboriosam in totam exercitationem corporis nulla doloribus vitae aliquam consequatur, tempore officia, ab voluptatem incidunt! Incidunt suscipit odio corrupti ipsa earum nulla vel rerum veritatis, magni sapiente laudantium veniam deleniti minima.</p>
+    <div id="perso-main">
+      <div id="LOVE2D">
+        <div id="gravity">
+          <h1>GRAVITY</h1>
+        </div>
+        <div id="slide-the-joe">
+          <h1>Slide The Joe</h1>
+        </div>
+      </div>
+      <div id="wlpp-boxes"></div>
+      <div id="AoC"></div>
+    </div>
   </div>
   <div id="middle-content" onclick="closeScreen(this.id)" class="content">
+
   </div>
+
   <div id="triforce">
     <svg>
       <g id="top" onclick="openScreen(this.id)">
@@ -44,5 +97,5 @@
     </svg>
   </div>
   <script src="https://unpkg.com/@mojs/core"></script>
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>

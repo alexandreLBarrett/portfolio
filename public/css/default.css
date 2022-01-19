@@ -1,4 +1,10 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('../fonts/Game Space Academy.otf');
+}
+
 body {
+    font-family: myFirstFont;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +37,6 @@ body {
 }
 
 .content {
-    padding: 1em;
     opacity: 0;
     position: fixed;
     width: 100vw;

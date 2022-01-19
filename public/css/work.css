@@ -1,0 +1,112 @@
+#top-content {
+    background-color: antiquewhite;
+}
+
+#top-content h1 {
+    margin-left: 10%;
+}
+
+
+#work-main {
+    display: flex;
+    position: relative;
+    margin: auto;
+    height: 80%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#work-main .web-bubble {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    border-radius: 25% 100% 100% 25%;
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+#work-main .web-bubble::after {
+    content: "Web";
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    font-size: 3rem;
+}
+
+#work-main .game-bubble {
+    position: absolute;
+    left: 40%;
+    width: 60%;
+    height: 100%;
+    border-radius: 100% 25% 25% 100%;
+    background-color: rgba(255, 255, 0, 0.452);
+}
+
+#work-main .game-bubble::after {
+    content: "Games";
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    font-size: 3rem;
+}
+
+.banner {
+    position: absolute;
+    display: flex;
+    width: 40%;
+    z-index: 2000;
+}
+
+.banner div {
+    margin-left: .5rem;
+}
+
+.company-name {
+    
+}
+
+.company-desc {
+    
+}
+
+/* tollé */
+#tolle {
+    left: 25%;
+    top: 60%;
+}
+
+#tolle img {
+    width: 30%;
+    height: 30%;
+}
+
+/* polygon */
+#polygon {
+    left: 10%;
+    top: 10%;
+}
+
+#polygon img {
+    width: 50%;
+    height: 30%;
+}
+
+/* ubisoft */
+#dna-nova {
+    left: 2%;
+    top: 30%;
+}
+
+#dna-nova img {
+    width: 30%;
+    height: 30%;
+}
+
+#talisker {
+    left: 50%;
+    top: 25%;
+}
+
+#talisker img {
+    width: 30%;
+    height: 30%;
+}

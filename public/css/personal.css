@@ -1,0 +1,39 @@
+#bottom-right-content {
+    background-color: #42f563;
+}
+
+#bottom-right-content > h1 {
+    margin-left: 10%;
+}
+
+#perso-main {
+    border-top: 2px solid grey;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "love2d wlpp-boxes"
+        "love2d AoC"
+    ;
+    height: 100%;
+    justify-content: center;
+}
+
+#LOVE2D {
+    background-color: rgb(225, 244, 252);
+    grid-area: love2d;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-right: 2px solid grey;
+}
+
+#wlpp-boxes {
+    grid-area: wlpp-boxes;
+}
+
+#AoC {
+    grid-area: AoC;
+    background-color: rgb(15, 15, 35);
+    border-top: 2px solid grey
+}

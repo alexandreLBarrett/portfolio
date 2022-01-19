@@ -2,6 +2,22 @@
     "work-thumbnail": "Travail",
     "work-header": "Mon histoire de carrière",
 
+    "tollé-name": "Tollé: Agence Marketing",
+    "tollé-date": "(2020)",
+    "tollé-description": "Travailler sur des sites web de grandes envergures dont un site de gestion de OSBL ainsi qu'un site de personnalisation d'équipement de gardient de but de hockey",
+
+    "polygon-name": "Sécurité Polygon",
+    "polygon-date": "(2019)",
+    "polygon-description": "Amélioration d'un ORM utilisé à la grandeur de l'entreprise",
+
+    "nova-name": "DNA: Nova",
+    "nova-date": "(début 2021)",
+    "nova-description": "Travailler sur un système Kafka streams qui permettait de créer des agrégats de donnés pertinentes ainsi qu'un portail web pour gérer les configuration des agrégats",
+
+    "talisker-name": "Talisker",
+    "talisker-date": "(fin 2021)",
+    "talisker-description": "Implémenter le système de matchmaking de Google: Open-Match au sein de l'engin de jeu Snowdrop",
+
     "school-thumbnail": "Études",
     "school-header": "Mon parcours scolaire",
 
