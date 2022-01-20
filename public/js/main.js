@@ -35,6 +35,10 @@ function openScreen(partName) {
   }
 }
 
+function avoidBubble(event) {
+  event.stopPropagation();
+}
+
 window.onresize = () => {
   const reference = {x: 1920, y: 1080}
   var scaleY = window.outerHeight / reference.y;

@@ -64,13 +64,31 @@
       <div id="LOVE2D">
         <div id="gravity">
           <h1>GRAVITY</h1>
+          <p>{{#i18n}}gravity-desc{{/i18n}}</p>
+          <img src="res/GravityExample.png">
         </div>
         <div id="slide-the-joe">
           <h1>Slide The Joe</h1>
+          <div>
+            <img src="res/SlideTheJoe.png"/>
+            <p>{{#i18n}}stj-desc{{/i18n}}</p>
+          </div>
         </div>
       </div>
-      <div id="wlpp-boxes"></div>
-      <div id="AoC"></div>
+      <div id="wlpp-boxes">
+        <h1>Wallpaper Boxes</h1>
+        <p>{{#i18n}}wlpp-boxes-description{{/i18n}}</p>
+        <img id="wlpp-boxes-demo" />
+        <img id="wlpp-boxes-result" />
+      </div>
+      <div id="AoC">
+        <img src="res/AoC_tree.png"/>
+        <div>
+          <h1>Advent Of Code</h1>
+          <p>{{#i18n}}aoc-description{{/i18n}}</p>
+          <a target="_blank" href="https://github.com/alexandreLBarrett/AoC" onclick="avoidBubble">{{#i18n}}aoc-repo-link{{/i18n}}</a>
+        </div>
+      </div>
     </div>
   </div>
   <div id="middle-content" onclick="closeScreen(this.id)" class="content">

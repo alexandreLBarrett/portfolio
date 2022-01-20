@@ -6,5 +6,7 @@
     "school-header": "My School Journey",
 
     "personal-thumbnail": "Personal",
-    "personal-header": "My Passion Projects"
+    "personal-header": "My Passion Projects",
+    "aoc-description": "The Advent of Code is a website that gives challenges to the participants in the format of an advent calendar. Every day a new challenge with 2 parts, one that explores the subject and a second that challenges your approach for part 1",
+    "aoc-repo-link": "My approach to these challenges..."
 }

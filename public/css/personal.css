@@ -4,6 +4,7 @@
 
 #bottom-right-content > h1 {
     margin-left: 10%;
+    height: 5%;
 }
 
 #perso-main {
@@ -16,7 +17,7 @@
         "love2d wlpp-boxes"
         "love2d AoC"
     ;
-    height: 100%;
+    height: 95%;
     justify-content: center;
 }
 
@@ -28,12 +29,101 @@
     border-right: 2px solid grey;
 }
 
+#gravity {
+    width: 50vw;
+    height: 45vh;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    background-image: url('../res/gravity_background.jpg');
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "title demo" "desc demo";
+}
+
+#gravity p {
+    grid-area: desc;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+#gravity h1 {
+    grid-area: title;
+    margin-left: 1rem;
+}
+
+#gravity img {
+    border: 1px white solid;
+    grid-area: demo;
+    width: 20vw;
+    height: 40vh;
+}
+
+#slide-the-joe h1 {
+    margin-left: 1rem;
+}
+
+#slide-the-joe div {
+    display: flex;
+    padding: 0 1rem;
+}
+
+#slide-the-joe div p {
+    margin: 1rem;
+    font-size: 1.3rem;
+}
+
+#slide-the-joe img {
+    width: 15vw;
+    height: 30vh;
+}
+
 #wlpp-boxes {
+    padding-left: 1rem;
     grid-area: wlpp-boxes;
+    background-image: url('../res/random-color-squares.jpg');
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "title result" "demo desc";
+}
+
+#wlpp-boxes h1 {
+    grid-area: title;
+}
+
+#wlpp-boxes p {
+    grid-area: desc;
+}
+
+#wlpp-boxes-demo {
+    grid-area: demo;
+}
+
+#wlpp-boxes-result {
+    grid-area: result;
 }
 
 #AoC {
     grid-area: AoC;
     background-color: rgb(15, 15, 35);
-    border-top: 2px solid grey
+    border-top: 2px solid grey;
+    display: flex;
+    color: white;
+}
+
+#AoC a {
+    color: white;
+}
+
+#AoC a:hover {
+    color: green;
+}
+
+
+#AoC img {
+    width: 25vw;
+    height: 50vh;
 }

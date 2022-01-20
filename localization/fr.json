@@ -22,5 +22,15 @@
     "school-header": "Mon parcours scolaire",
 
     "personal-thumbnail": "Personnel",
-    "personal-header": "Mes projets de passion"
+    "personal-header": "Mes projets de passion",
+
+    "aoc-description": "\"Advent Of Code\" est un site web offrant un défi aux participants sous la forme d'un calendrier de l'avent. Il y a un nouveau défi par jour organisé en deux parties: la première explorant les concepts du défi et la deuxième défiant la solution donnée à la partie 1.<br/><br/>J'y participe depuis 2021 !",
+    "aoc-repo-link": "Mes solutions des défis...",
+
+    "wlpp-boxes-description": "J'ai crée cette application simple permettant de modifier le fond d'écran de l'ordinateur pour permettre d'encadrer certaines choses sur celui-ci. Cette idée m'est venue d'une envie de catégoriser mes raccourcis de bureau.",
+
+    "stj-desc": "\"Slide The Joe\" était un jeu que j'ai créé en voulant reproduire le genre de puzzle dans les jeux zelda qui consistaient à faire glisser un block sur une surface glacée avec des obstacle pour l'amener à une plaque de pression. Un des enjeux principaux est qu'il est impossible d'arrêter le bloc dans sa lancée.",
+
+    "gravity-desc": "\"GRAVITY\" est un jeu que j'ai concu qui consistait de lancer une fusée avec un angle initial ainsi qu'une puissance pour essayer d'atteindre le trou noir dans le niveau. Cela implique prendre en compte la gravité des planettes qui changent la trajectoire du projectile."
+
 }
