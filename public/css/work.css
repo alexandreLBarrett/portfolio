@@ -6,7 +6,6 @@
     margin-left: 10%;
 }
 
-
 #work-main {
     display: flex;
     position: relative;
@@ -49,24 +48,56 @@
     font-size: 3rem;
 }
 
+.hover-wrapper {
+    position: relative;
+}
+
+.hover-wrapper > img {
+    display: block;
+}
+
 .banner {
     position: absolute;
-    display: flex;
-    width: 40%;
     z-index: 2000;
+    border-radius: 50px;
+    overflow: hidden;
 }
 
-.banner div {
-    margin-left: .5rem;
+.hover-wrapper:hover > div {
+    opacity: 1;
 }
 
-.company-name {
-    
+.hover-wrapper > div {
+    top: 0;
+    left: 0;
+    background-color: rgba(200, 200, 200, .9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .5s;
 }
 
-.company-desc {
-    
+.hover-wrapper > div .title {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.8rem;
 }
+
+.hover-wrapper > div .desc {
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.hover-wrapper > div .technos {
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 0;
+    font-weight: bold;
+}
+
 
 /* tollé */
 #tolle {
@@ -75,19 +106,17 @@
 }
 
 #tolle img {
-    width: 30%;
-    height: 30%;
+    width: 15vw;
 }
 
 /* polygon */
 #polygon {
     left: 10%;
     top: 10%;
-}
+}   
 
 #polygon img {
-    width: 50%;
-    height: 30%;
+    width: 20vw;
 }
 
 /* ubisoft */
@@ -97,8 +126,7 @@
 }
 
 #dna-nova img {
-    width: 30%;
-    height: 30%;
+    width: 15vw;
 }
 
 #talisker {
@@ -107,6 +135,5 @@
 }
 
 #talisker img {
-    width: 30%;
-    height: 30%;
+    width: 15vw;
 }

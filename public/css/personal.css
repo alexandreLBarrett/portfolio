@@ -1,5 +1,6 @@
 #bottom-right-content {
     background-color: #42f563;
+    font-size: 1.3rem;
 }
 
 #bottom-right-content > h1 {
@@ -24,7 +25,7 @@
     background-color: rgb(225, 244, 252);
     grid-area: love2d;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     border-right: 2px solid grey;
 }
 
@@ -43,7 +44,7 @@
 #gravity p {
     grid-area: desc;
     padding: 1rem;
-    font-size: 1.3rem;
+    
 }
 
 #gravity h1 {
@@ -56,20 +57,21 @@
     grid-area: demo;
     width: 20vw;
     height: 40vh;
+    align-self: center;
+    justify-self: center;
 }
 
 #slide-the-joe h1 {
     margin-left: 1rem;
 }
 
-#slide-the-joe div {
+#slide-the-joe > div {
     display: flex;
-    padding: 0 1rem;
+    padding-left: 0 1rem;
 }
 
-#slide-the-joe div p {
-    margin: 1rem;
-    font-size: 1.3rem;
+#slide-the-joe > div > div {
+    margin-left: 1rem;
 }
 
 #slide-the-joe img {
@@ -77,16 +79,29 @@
     height: 30vh;
 }
 
+#slide-the-joe a {
+    color: black;
+}
+
+#slide-the-joe a:hover {
+    color: blue;
+}
+
 #wlpp-boxes {
     padding-left: 1rem;
     grid-area: wlpp-boxes;
-    background-image: url('../res/random-color-squares.jpg');
+    background-image: url('../res/random_color_squares.jpg');
+    
     text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
     display: grid;
 
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "title result" "demo desc";
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas:
+        "title result"
+        "demo result"
+        "demo desc";
 }
 
 #wlpp-boxes h1 {
@@ -98,10 +113,15 @@
 }
 
 #wlpp-boxes-demo {
+    align-self: center;
+    width: 23vw;
     grid-area: demo;
 }
 
 #wlpp-boxes-result {
+    margin-top: 1rem;
+    border: 3px solid black;
+    width: 23vw;
     grid-area: result;
 }
 
@@ -111,6 +131,10 @@
     border-top: 2px solid grey;
     display: flex;
     color: white;
+}
+
+#AoC p {
+    margin-right: 1rem;
 }
 
 #AoC a {

@@ -1,0 +1,6 @@
+services:
+  app:
+    image: alex-portfolio
+    build: .
+    ports:
+      - 80:3000

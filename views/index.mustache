@@ -10,33 +10,45 @@
     <div id="work-main">
       <div class="web-bubble">
         <div id="polygon" class="banner">
-          <img class="company-image" src="res/polygon.jpg"></img>
-          <div>
-            <h3 class="company-name">{{#i18n}}polygon-name{{/i18n}} <small>{{#i18n}}polygon-date{{/i18n}}</small></h3>
-            <p class="company-desc">{{#i18n}}polygon-description{{/i18n}}</p>
+          <div class="hover-wrapper">
+            <img src="res/polygon.jpg"></img>
+            <div>
+              <h3 class="title">{{#i18n}}polygon-name{{/i18n}} <small>{{#i18n}}polygon-date{{/i18n}}</small></h3>
+              <p class="desc">{{#i18n}}polygon-description{{/i18n}}</p>
+              <p class="technos">{{#i18n}}polygon-technos{{/i18n}}</p>
+            </div>
           </div>
         </div>
         <div id="tolle" class="banner">
-          <img class="company-image" src="res/tollé.png"></img>
-          <div>
-            <h3 class="company-name">{{#i18n}}tollé-name{{/i18n}} <small>{{#i18n}}tollé-date{{/i18n}}</small></h3>
-            <p class="company-desc">{{#i18n}}tollé-description{{/i18n}}</p>
+          <div class="hover-wrapper">
+            <img src="res/tolle.png">
+            <div>
+              <h3 class="title">{{#i18n}}tollé-name{{/i18n}} <small>{{#i18n}}tollé-date{{/i18n}}</small></h3>
+              <p class="desc">{{#i18n}}tollé-description{{/i18n}}</p>
+              <p class="technos">{{#i18n}}tollé-technos{{/i18n}}</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="game-bubble">
         <div id="dna-nova" class="banner">
-          <img src="res/Ubisoft.png"></img>
-          <div>
-            <h3 class="company-name">{{#i18n}}nova-name{{/i18n}} <small>{{#i18n}}nova-date{{/i18n}}</small></h3>
-            <p class="company-desc">{{#i18n}}nova-description{{/i18n}}</p>
+          <div class="hover-wrapper">
+            <img src="res/ubisoft.png"></img>
+            <div>
+              <h3 class="title">{{#i18n}}nova-name{{/i18n}} <small>{{#i18n}}nova-date{{/i18n}}</small></h3>
+              <p class="desc">{{#i18n}}nova-description{{/i18n}}</p>
+              <p class="technos">{{#i18n}}nova-technos{{/i18n}}</p>
+            </div>
           </div>
         </div>
         <div id="talisker" class="banner">
-          <img src="res/Ubisoft.png"></img>
-          <div>
-            <h3 class="company-name">{{#i18n}}talisker-name{{/i18n}} <small>{{#i18n}}talisker-date{{/i18n}}</small></h3>
-            <p class="company-desc">{{#i18n}}talisker-description{{/i18n}}</p>
+          <div class="hover-wrapper">
+            <img src="res/ubisoft.png"></img>
+            <div>
+              <h3 class="title">{{#i18n}}talisker-name{{/i18n}} <small>{{#i18n}}talisker-date{{/i18n}}</small></h3>
+              <p class="desc">{{#i18n}}talisker-description{{/i18n}}</p>
+              <p class="technos">{{#i18n}}talisker-technos{{/i18n}}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -65,24 +77,27 @@
         <div id="gravity">
           <h1>GRAVITY</h1>
           <p>{{#i18n}}gravity-desc{{/i18n}}</p>
-          <img src="res/GravityExample.png">
+          <img src="res/gravity_example.png">
         </div>
         <div id="slide-the-joe">
           <h1>Slide The Joe</h1>
           <div>
-            <img src="res/SlideTheJoe.png"/>
-            <p>{{#i18n}}stj-desc{{/i18n}}</p>
+            <img src="res/slide_the_joe.png"/>
+            <div>
+              <p>{{#i18n}}stj-desc{{/i18n}}</p>
+              <a href="https://youtu.be/Eu_yO7zDZYk">{{#i18n}}stj-pb{{/i18n}}</a>
+            </div>
           </div>
         </div>
       </div>
       <div id="wlpp-boxes">
         <h1>Wallpaper Boxes</h1>
         <p>{{#i18n}}wlpp-boxes-description{{/i18n}}</p>
-        <img id="wlpp-boxes-demo" />
-        <img id="wlpp-boxes-result" />
+        <img id="wlpp-boxes-demo" src="res/boxes_demo.png" />
+        <img id="wlpp-boxes-result" src="res/boxes_result.png" />
       </div>
       <div id="AoC">
-        <img src="res/AoC_tree.png"/>
+        <img src="res/aoc_tree.png"/>
         <div>
           <h1>Advent Of Code</h1>
           <p>{{#i18n}}aoc-description{{/i18n}}</p>
@@ -110,7 +125,7 @@
         <text text-anchor="middle" dominant-baseline="middle" x="50" y="55">{{#i18n}}personal-thumbnail{{/i18n}}</text>
       </g>
       <g id="middle" onclick="openScreen(this.id)">
-        <polygon points="0 0, 50 75, 100 0"  style="fill:black;stroke:black"/>
+        <polygon points="0 0, 50 75, 100 0"  style="fill:black;"/>
       </g>
     </svg>
   </div>

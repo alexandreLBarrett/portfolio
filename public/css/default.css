@@ -4,6 +4,8 @@
 }
 
 body {
+    background-image: url('../res/zelda_background.jpg');
+    user-select: none;
     font-family: myFirstFont;
     display: flex;
     align-items: center;
